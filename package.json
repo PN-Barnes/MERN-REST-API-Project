@@ -1,0 +1,29 @@
+{
+  "name": "mern-rest-api-project",
+  "version": "1.0.0",
+  "description": "REST api practice with MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PN-Barnes/MERN-REST-API-Project.git"
+  },
+  "author": "Paul Barnes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PN-Barnes/MERN-REST-API-Project/issues"
+  },
+  "homepage": "https://github.com/PN-Barnes/MERN-REST-API-Project#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
