@@ -1,6 +1,9 @@
 const express = require('express');
+const { Db } = require('mongodb');
 const path = require('path');
 const { errorHandler } = require('./middleware/errorMiddleware');
+
+const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -15,7 +18,8 @@ if (process.env.NODE_ENV === 'production') {
 app.use(require('./routes/api.js'));
 
 // app.use(errorHandler);
-
-app.listen(PORT, () => {
-  console.log(`API server running on port ${PORT}!`);
+db.once('open', () => {
+  app.listen(PORT, () => {
+    console.log(`API server running on port ${PORT}!`);
+  });
 });

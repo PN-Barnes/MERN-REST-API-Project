@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Green Chile Burrito",
+    "price": 9000,
+    "description": "Green Chile used in combination with carne asada, beans, rice, and cheese.",
+    "ingredients": ["green chile", "beans", "Rice", "cheese"]
+  }
+]
